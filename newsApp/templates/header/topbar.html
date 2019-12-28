@@ -1,4 +1,5 @@
-{% block topheader %}
+{% load static %}
+{% block topbar %}
     <div class="topbar">
         <div class="content-topbar container h-100">
             <div class="left-topbar">
@@ -7,7 +8,7 @@
                         New York, NY
                     </span>
 
-                    <img class="m-b-1 m-rl-8" src="images/icons/icon-night.png" alt="IMG">
+                    <img class="m-b-1 m-rl-8" src= {% static "images/icons/icon-night.png" %} alt="IMG">
 
                     <span>
                         HI 58° LO 56°
@@ -54,4 +55,4 @@
             </div>
         </div>
     </div>
-{% endblock topheader %}
+{% endblock topbar %}

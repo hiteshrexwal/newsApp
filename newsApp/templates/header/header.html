@@ -1,14 +1,22 @@
 {% block header %}
-    {% block topheader %}
-        {% include "header/top.html" %}
-    {% endblock topheader %}
+    {% block topbar %}
+        {% include "header/topbar.html" %}
+    {% endblock topbar %}
 
-    {% block midheader %}
-        {% include "header/bottom.html" %}
-    {% endblock midheader %}
+    {% block mobileheader %}
+        {% include "header/mobile-header.html" %}
+    {% endblock mobileheader %}
 
-    {% block bottomheader %}
-        {% include "header/bottom.html" %}
-    {% endblock bottomheader %}
-    
+    {% block mobilemenu %}
+        {% include "header/mobile-menu.html" %}
+    {% endblock mobilemenu %}
+
+    {% block logobar %}
+        {% include "header/logobar.html" %}
+    {% endblock logobar %}
+
+    {% block menubar %}
+        {% include "header/menubar.html" %}
+    {% endblock menubar %}
+
 {% endblock header %}
